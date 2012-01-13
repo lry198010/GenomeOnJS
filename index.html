@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Welcome to GeQTLJSBrowser ---- Genome feature and QTL Jioned Presentation on Browser </title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#SHInputArea").click(function(){
+          $("#InputArea").slideToggle('slow');
+        });
+        $("#SHParameterArea").click(function(){
+          $("#ParameterArea").slideToggle('slow');
+        });
+        $("#SHResultArea").click(function(){
+          $("#ResultArea").slideToggle('slow');
+        });
+        $("#SHLogArea").click(function(){
+          $("#LogArea").slideToggle('slow');
+        });      
+        
+        $("#add_region").click(function(){
+          alert("ok");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Display Sequence Element Provided by Region/Sequence-Pattern</h1>
+    <div id="ControlPanel" name="ControlPanel">
+      <a href="#" id="SHInputArea" name="SHInputArea">Hide/Show InputArea</a>|
+      <a href="#" id="SHParameterArea" name="SHParameterArea">Hide/Show ParameterArea</a>|
+      <a href="#" id="SHResultArea" name="SHResultArea">Hide/Show ResultArea</a>|
+      <a href="#" id="SHLogArea" name="SHLogArea">Hide/Show Log Area</a>
+    </div>
+    <div id="InputArea" name="InputArea">
+      <textarea id="sequence" name="sequence" rows=40 cols=80></textarea>
+    </div>
+    <div id="ParameterArea" name="ParameterArea">
+       <a href="#" id="add_region" name="add_region">Add sequence Region </a>|<a href="#" id="add_pattern" name="add_pattern">Add Sequence Pattern</a>
+       <div id="ParameterSetIn" name="ParameterSetIn">
+       
+       </div>
+    </div>
+    
+    <div id="ResultArea" name="ResultArea">
+    
+    </div>
+    
+    <div id="LogArea" name="LogArea">
+    
+    </div>
+    <div id="add_regionDial" name="add_regionDial" title="Add Region">
+      <p>Add region</p>
+    </div>
+    <ul>
+      <li>sequence site recognized and display </li>
+    </ul>
+  </body>
+</html>
